@@ -3,6 +3,18 @@ const fs = require('fs/promises');
 const sourceUrls = [
   
   "https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/refs/heads/main/subscriptions/mix-normal.txt",
+  "https://raw.githubusercontent.com/ByeWhiteLists/ByeWhiteLists2/refs/heads/main/ByeWhiteLists2.txt",
+  "https://raw.githubusercontent.com/0xAbolfazl/PyroConfig/main/Configs/vless.txt",
+  "https://raw.githubusercontent.com/1man01/sub-aggregator/main/merged_subscription_germany.txt",
+  "https://raw.githubusercontent.com/Argh73/V2Ray-Vault/main/data/sub/protocols/trojan.txt",
+  "https://raw.githubusercontent.com/azatabd/v2ray_fetch/main/trojan.txt",
+  "https://raw.githubusercontent.com/ctsfork/web/main/vpn/v2/youneed.win_trojan.txt",
+  "https://raw.githubusercontent.com/mrvcoder/V2rayCollector/refs/heads/main/trojan_iran.txt",
+  "https://raw.githubusercontent.com/F0rc3Run/F0rc3Run/refs/heads/main/splitted-by-protocol/trojan.txt",
+  "https://raw.githubusercontent.com/hamedp-71/Trojan/main/hp.txt",
+  "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/splitted/trojan.txt",
+  "https://raw.githubusercontent.com/ezgy1984/Aggregated-Split-ProxyList/refs/heads/main/trojan.txt",
+  "https://raw.githubusercontent.com/pyptom76/pyptom76/main/trojan.txt",
   "https://github.com/Firmfox/Proxify/raw/refs/heads/main/v2ray_configs/separated_by_protocol/trojan.txt",
   "https://github.com/Firmfox/Proxify/raw/refs/heads/main/v2ray_configs/separated_by_protocol/vless.txt",
   "https://raw.githubusercontent.com/flaafix/AetrisVPN-white-list-lite/refs/heads/main/AetrisVPN.txt",
