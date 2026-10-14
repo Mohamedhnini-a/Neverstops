@@ -2,7 +2,7 @@ const fs = require('fs/promises');
 
 const sourceUrls = [
   
-  "https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/refs/heads/main/subscriptions/mix-normal.txt",
+   "https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/refs/heads/main/subscriptions/mix-normal.txt",
   "https://raw.githubusercontent.com/ByeWhiteLists/ByeWhiteLists2/refs/heads/main/ByeWhiteLists2.txt",
   "https://raw.githubusercontent.com/0xAbolfazl/PyroConfig/main/Configs/vless.txt",
   "https://raw.githubusercontent.com/1man01/sub-aggregator/main/merged_subscription_germany.txt",
@@ -19,30 +19,7 @@ const sourceUrls = [
   "https://github.com/Firmfox/Proxify/raw/refs/heads/main/v2ray_configs/separated_by_protocol/vless.txt",
   "https://raw.githubusercontent.com/flaafix/AetrisVPN-white-list-lite/refs/heads/main/AetrisVPN.txt",
   "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/refs/heads/main/all/configs.txt",
-  "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/All_Configs_Sub.txt",
-  "https://raw.githubusercontent.com/F0rc3Run/F0rc3Run/refs/heads/main/Best-Results/proxies.txt",
-  "https://raw.githubusercontent.com/flaafix/AetrisVPN-black-list/refs/heads/main/configs.txt",
-  "https://github.com/MustafaBaqer/VestraNet-Nodes/raw/refs/heads/main/protocols/trojan.txt",
-  "https://raw.githubusercontent.com/mahsanet/MahsaFreeConfig/refs/heads/main/mci/sub_1.txt",
-  "https://raw.githubusercontent.com/mahsanet/MahsaFreeConfig/refs/heads/main/mci/sub_2.txt",
-  "https://raw.githubusercontent.com/mahsanet/MahsaFreeConfig/refs/heads/main/mtn/sub_1.txt",
-  "https://github.com/MustafaBaqer/VestraNet-Nodes/raw/refs/heads/main/protocols/vless.txt",
-  "https://github.com/MohammadBahemmat/V2ray-Collector/raw/refs/heads/main/all_servers.txt",
-  "https://github.com/VOID-Anonymity/V.O.I.D-VPN_Bypass/raw/refs/heads/main/url_work.txt",
-  "https://github.com/0xRadikal/Free-v2ray-Configs/raw/refs/heads/main/heavy/configs.txt",
-  "https://github.com/0xRadikal/Free-v2ray-Configs/raw/refs/heads/main/fast/configs.txt",
-  "https://raw.githubusercontent.com/HosseinKoofi/GO_V2rayCollector/main/mixed_iran.txt",
-  "https://github.com/hans-thomas/v2ray-subscription/raw/refs/heads/master/servers.txt",
-  "https://github.com/ShatakVPN/ConfigForge-V2Ray/raw/refs/heads/main/configs/all.txt",
-  "https://github.com/Epodonios/v2ray-configs/raw/refs/heads/main/All_Configs_Sub.txt",
-  "https://github.com/ShatakVPN/ConfigForge-V2Ray/raw/refs/heads/main/configs/all.txt",
-  "https://raw.githubusercontent.com/V2RayRoot/V2RayConfig/main/Config/vless.txt",
-  "https://github.com/miladtahanian/V2RayCFGDumper/raw/refs/heads/main/sub.txt",
-  "https://github.com/roosterkid/openproxylist/raw/refs/heads/main/V2RAY.txt",
-  "https://github.com/SoliSpirit/SolVPN/raw/refs/heads/main/all_configs.txt",
-  "https://github.com/liMilCo/v2r/raw/refs/heads/main/all_configs.txt",
-  "https://sub.vlessfo.ru/vlessforu/working_configs.txt",
-  "https://github.com/ebrasha/free-v2ray-public-list/raw/refs/heads/main/V2Ray-Config-By-EbraSha-All-Type.txt"
+  "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/All_Configs_Sub.txt"
 ];
 
 const FREE_IP = "104.18.37.127";
