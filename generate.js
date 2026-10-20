@@ -1,7 +1,7 @@
 const fs = require('fs/promises');
 
 const sourceUrls = [
- "https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/refs/heads/main/subscriptions/mix-normal.txt",
+  "https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/refs/heads/main/subscriptions/mix-normal.txt",
   "https://github.com/barry-far/V2ray-Config/raw/refs/heads/main/All_Configs_Sub.txt",
   "https://raw.githubusercontent.com/ByeWhiteLists/ByeWhiteLists2/refs/heads/main/ByeWhiteLists2.txt",
   "https://raw.githubusercontent.com/0xAbolfazl/PyroConfig/main/Configs/vless.txt",
@@ -36,12 +36,24 @@ function decodeIfBase64(text) {
     const padded = normalized.padEnd(Math.ceil(normalized.length / 4) * 4, '=');
     const decoded = Buffer.from(padded, 'base64').toString('utf8');
 
-    if (decoded.includes('vless://') || decoded.includes('trojan://')) {
+    if (decoded.includes('vless://') || decoded.includes('trojan://') || decoded.includes('vmess://')) {
       return decoded;
     }
   } catch (_) {}
 
   return text;
+}
+
+function b64DecodeUtf8(b64) {
+  try {
+    b64 = b64.trim().replace(/\s/g, '');
+    b64 += "=".repeat((4 - (b64.length % 4)) % 4);
+    return Buffer.from(b64, 'base64').toString('utf8');
+  } catch { return null; }
+}
+
+function b64EncodeUtf8(str) {
+  return Buffer.from(str, 'utf8').toString('base64');
 }
 
 async function main() {
@@ -62,7 +74,7 @@ async function main() {
   for (let text of texts) {
     let decodedText = text;
 
-    if (!text.includes('vless://') && !text.includes('trojan://')) {
+    if (!text.includes('vless://') && !text.includes('trojan://') && !text.includes('vmess://')) {
       decodedText = decodeIfBase64(text);
     }
 
@@ -72,8 +84,49 @@ async function main() {
       line = line.trim();
       if (!line) continue;
 
-      const cleanLine = line.split('#')[0].trim();
+      // ==========================================
+      // 1. إضافة VMess
+      // ==========================================
+      if (line.startsWith('vmess://')) {
+        try {
+          const cleanLine = line.split('#')[0];
+          const b64 = cleanLine.slice(8).trim();
+          const jsonStr = b64DecodeUtf8(b64);
+          if (!jsonStr) continue;
+          
+          const config = JSON.parse(jsonStr);
 
+          // شروط: WS + TLS + Port 443
+          if (
+            String(config.net).toLowerCase() !== 'ws' || 
+            String(config.tls).toLowerCase() !== 'tls' || 
+            String(config.port) !== '443'
+          ) continue;
+
+          const host = String(config.host || config.sni || '').toLowerCase().trim();
+          const sni = String(config.sni || config.host || '').toLowerCase().trim();
+          if (!host || !sni) continue;
+
+          // منع التكرار
+          const signature = `vmess|${config.id}|${host}|${sni}`;
+          if (seenConfigs.has(signature)) continue;
+          seenConfigs.add(signature);
+
+          // تعديل الـ IP
+          config.add = FREE_IP;
+          config.host = host;
+          config.sni = sni;
+
+          const newB64 = b64EncodeUtf8(JSON.stringify(config));
+          filteredConfigs.push("vmess://" + newB64);
+        } catch (_) {}
+        continue;
+      }
+
+      // ==========================================
+      // 2. معالجة VLESS و Trojan
+      // ==========================================
+      const cleanLine = line.split('#')[0].trim();
       if (!cleanLine.startsWith('vless://') && !cleanLine.startsWith('trojan://')) {
         continue;
       }
@@ -114,8 +167,9 @@ async function main() {
     }
   }
 
+  // حفظ الملف كنص عادي (بلا تشفير باش Cloudflare يقدر يقراه)
   await fs.writeFile('sub.txt', filteredConfigs.join('\n'), 'utf8');
-  console.log(`Saved ${filteredConfigs.length} configs to sub.txt`);
+  console.log(`✅ Saved ${filteredConfigs.length} configs to sub.txt`);
 }
 
 main().catch(err => {
