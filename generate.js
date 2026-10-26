@@ -4,6 +4,8 @@ const sourceUrls = [
   "https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/refs/heads/main/subscriptions/mix-normal.txt",
   "https://github.com/barry-far/V2ray-Config/raw/refs/heads/main/All_Configs_Sub.txt",
   "https://raw.githubusercontent.com/ByeWhiteLists/ByeWhiteLists2/refs/heads/main/ByeWhiteLists2.txt",
+  "https://github.com/0xRadikal/Free-v2ray-Configs/raw/refs/heads/main/top100.txt",
+  "https://github.com/0xRadikal/Free-v2ray-Configs/raw/refs/heads/main/verified/configs.txt",
   "https://raw.githubusercontent.com/0xAbolfazl/PyroConfig/main/Configs/vless.txt",
   "https://raw.githubusercontent.com/1man01/sub-aggregator/main/merged_subscription_germany.txt",
   "https://raw.githubusercontent.com/Argh73/V2Ray-Vault/main/data/sub/protocols/trojan.txt",
