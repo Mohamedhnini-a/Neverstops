@@ -1172,7 +1172,7 @@ const sourceUrls = [
   "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/refs/heads/main/all/configs.txt",
   "https://github.com/MhdiTaheri/V2rayCollector/raw/refs/heads/main/sub/trojan",
   "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/trojan_configs.txt",
-  "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/All_Configs_Sub.txt"
+  "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/All_Configs_Sub.txt",
   "https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/mini/m1n1-5ub-50.txt",
     "https://raw.githubusercontent.com/longlon/v2ray-config/HEAD/Sub4.txt",
     "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Base64/Sub60_base64.txt",
