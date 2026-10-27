@@ -29,7 +29,7 @@ const sourceUrls = [
   "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/All_Configs_Sub.txt"
 ];
 
-const FREE_IP = "104.18.37.127";
+const FREE_IP = "x.com";
 
 function decodeIfBase64(text) {
   try {
