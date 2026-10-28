@@ -1863,7 +1863,7 @@ const sourceUrls = [
     "https://raw.githubusercontent.com/asgharkapk/Sub-Config-Extractor/refs/heads/main/output_configs/v2ray/Surfboardv2ray_ipv6.yaml",
 ];
 
-const FREE_IP = "x.com";
+const FREE_IP = "www.getlucky.com";
 
 function decodeIfBase64(text) {
   try {
