@@ -10,6 +10,10 @@ const sourceUrls = [
      "https://github.com/barry-far/V2ray-Config/raw/refs/heads/main/All_Configs_Sub.txt",
      "https://github.com/ermaozi/get_subscribe/raw/refs/heads/main/subscribe/v2ray.txt",
      "https://github.com/Barabama/FreeNodes/raw/refs/heads/main/nodes/freeclashnode.txt",
+     "https://github.com/itsyebekhe/PSG/raw/refs/heads/main/config.txt",
+     "https://github.com/itsyebekhe/PSG/raw/refs/heads/main/subscriptions/xray/cdn",
+     "https://github.com/peasoft/NoMoreWalls/raw/refs/heads/master/list_raw.txt",
+     "https://github.com/0xRadikal/Free-v2ray-Configs/raw/refs/heads/main/all/configs.txt",
      
 ];
 
