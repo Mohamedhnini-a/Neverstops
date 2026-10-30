@@ -9,6 +9,7 @@ const sourceUrls = [
      "https://github.com/mahdibland/V2RayAggregator/raw/refs/heads/master/sub/sub_merge.txt",
      "https://github.com/barry-far/V2ray-Config/raw/refs/heads/main/All_Configs_Sub.txt",
      "https://github.com/ermaozi/get_subscribe/raw/refs/heads/main/subscribe/v2ray.txt",
+     "https://github.com/Barabama/FreeNodes/raw/refs/heads/main/nodes/freeclashnode.txt",
      
 ];
 
