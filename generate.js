@@ -16,6 +16,7 @@ const sourceUrls = [
      "https://github.com/0xRadikal/Free-v2ray-Configs/raw/refs/heads/main/all/configs.txt",
      "https://github.com/iboxz/free-v2ray-collector/raw/refs/heads/main/main/mix",
      "https://github.com/flaafix/AetrisVPN-black-list/raw/refs/heads/main/configs.txt",
+     "https://github.com/Mohamedhnini-a/testeur/raw/refs/heads/main/working_configs.txt",
 ];
 
 // ============================================================
@@ -25,15 +26,6 @@ const HOST_POOL = [
   "104.18.37.127",
   "x.com",
   "www.getlucky.com",
-  "104.18.36.146",
-  "172.64.150.129",
-  "172.64.151.110",
-  "canary-proxsee-cf.pscp.tv",
-  "game01.circus.nl",
-  "104.18.41.245",
-  "185.199.108.153",
-  "api.server.io",
-  "104.16.132.229"
 ];
 
 let hostIndex = 0; // مؤشر التوزيع
