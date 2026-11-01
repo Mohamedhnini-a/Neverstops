@@ -14,7 +14,8 @@ const sourceUrls = [
      "https://github.com/itsyebekhe/PSG/raw/refs/heads/main/subscriptions/xray/cdn",
      "https://github.com/peasoft/NoMoreWalls/raw/refs/heads/master/list_raw.txt",
      "https://github.com/0xRadikal/Free-v2ray-Configs/raw/refs/heads/main/all/configs.txt",
-     
+     "https://github.com/iboxz/free-v2ray-collector/raw/refs/heads/main/main/mix",
+     "https://github.com/flaafix/AetrisVPN-black-list/raw/refs/heads/main/configs.txt",
 ];
 
 // ============================================================
