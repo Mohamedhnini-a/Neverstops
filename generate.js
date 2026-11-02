@@ -2,24 +2,9 @@ const fs = require('fs/promises');
 
 // الليستة ديال الروابط ديالك (خليها كيفما هي عندك، هنا درت غير اختصار باش الكود يبان)
 const sourceUrls = [
-     "https://github.com/MatinGhanbari/v2ray-configs/raw/refs/heads/main/subscriptions/v2ray/all_sub.txt",
-     "https://github.com/miladtahanian/V2RayScrapeByCountry/raw/refs/heads/main/output_configs/Vmess.txt",
-     "https://github.com/miladtahanian/V2RayScrapeByCountry/raw/refs/heads/main/output_configs/Trojan.txt",
-     "https://raw.githubusercontent.com/miladtahanian/V2RayScrapeByCountry/refs/heads/main/output_configs/Vless.txt",
-     "https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/refs/heads/main/subscriptions/mix-normal.txt",
-     "https://raw.githubusercontent.com/MohammadBahemmat/V2ray-Collector/refs/heads/main/all_servers.txt",
-     "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/refs/heads/master/sub/sub_merge.txt",
-     "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/refs/heads/main/all/configs.txt",
-     "https://github.com/mahdibland/V2RayAggregator/raw/refs/heads/master/sub/sub_merge.txt",
+  
      "https://github.com/barry-far/V2ray-Config/raw/refs/heads/main/All_Configs_Sub.txt",
-     "https://github.com/ermaozi/get_subscribe/raw/refs/heads/main/subscribe/v2ray.txt",
-     "https://github.com/Barabama/FreeNodes/raw/refs/heads/main/nodes/freeclashnode.txt",
-     "https://github.com/itsyebekhe/PSG/raw/refs/heads/main/config.txt",
-     "https://github.com/itsyebekhe/PSG/raw/refs/heads/main/subscriptions/xray/cdn",
-     "https://github.com/peasoft/NoMoreWalls/raw/refs/heads/master/list_raw.txt",
-     "https://github.com/0xRadikal/Free-v2ray-Configs/raw/refs/heads/main/all/configs.txt",
-     "https://github.com/iboxz/free-v2ray-collector/raw/refs/heads/main/main/mix",
-     "https://github.com/flaafix/AetrisVPN-black-list/raw/refs/heads/main/configs.txt",
+     
      "https://github.com/Mohamedhnini-a/testeur/raw/refs/heads/main/working_configs.txt",
      
 ];
