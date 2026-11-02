@@ -30,6 +30,12 @@ const HOST_POOL = [
   "104.18.37.127",
   "x.com",
   "www.getlucky.com",
+  "www.getlucky.com",
+  "104.18.36.146",
+  "172.64.150.129",
+  "172.64.151.110",
+  "canary-proxsee-cf.pscp.tv",
+  "game01.circus.nl",
 ];
 
 let hostIndex = 0; // مؤشر التوزيع
