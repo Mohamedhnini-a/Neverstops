@@ -10,7 +10,7 @@ const sourceUrls = [
     "https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/refs/heads/main/subscriptions/mix-normal.txt",
     "https://raw.githubusercontent.com/miladtahanian/V2RayCFGDumper/refs/heads/main/sub.txt",
     "https://github.com/barry-far/V2ray-Config/raw/refs/heads/main/All_Configs_Sub.txt",
-     
+     "https://github.com/Mohamedhnini-a/testeur/raw/refs/heads/main/working_configs.txt",
     "https://github.com/Mohamedhnini-a/testeur/raw/refs/heads/main/working_configs.txt",
      
 ];
