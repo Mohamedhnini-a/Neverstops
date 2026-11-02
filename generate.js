@@ -2,6 +2,8 @@ const fs = require('fs/promises');
 
 // الليستة ديال الروابط ديالك (خليها كيفما هي عندك، هنا درت غير اختصار باش الكود يبان)
 const sourceUrls = [
+    "https://github.com/Firmfox/Proxify/raw/refs/heads/main/v2ray_configs/separated_by_protocol/mixed.txt",
+    "https://github.com/MahanKenway/Pusheen-V2Ray/raw/refs/heads/main/subscriptions/all.txt",
     "https://github.com/MaxFreudDrethe/VCC/raw/refs/heads/main/configs/tls.txt",
     "https://github.com/MaxFreudDrethe/VCC/raw/refs/heads/main/configs/all.txt",
     "https://github.com/MohammadBahemmat/V2ray-Collector/raw/refs/heads/main/servers/trojan_servers.txt",
