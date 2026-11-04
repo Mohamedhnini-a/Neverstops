@@ -785,7 +785,7 @@ const sourceUrls = [
 "https://raw.githubusercontent.com/10Dream/sub-mod/main/sub/split/countries/TW.txt",
 "https://raw.githubusercontent.com/penhandev/AutoAiVPN/HEAD/russia.txt",
 "https://raw.githubusercontent.com/hamedcode/port-based-v2ray-configs/main/sub/port_80.txt",
-"https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray-2.txt"
+"https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray-2.txt",
 "https://raw.githubusercontent.com/6b3478/telegram-configs-collector2/main/countries/ro/mixed",
 "https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/refs/heads/main/config/tcp-pass/batch_013.txt",
 "https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/data/githubmirror/clean/trojan.txt",
