@@ -2,6 +2,7 @@ const fs = require('fs/promises');
 
 // الليستة ديال الروابط ديالك (خليها كيفما هي عندك، هنا درت غير اختصار باش الكود يبان)
 const sourceUrls = [
+    "https://github.com/Mohamedhnini-a/Neverstops/raw/refs/heads/main/sub.txt",
     "https://github.com/morpheusadam/v2ray-config/raw/refs/heads/main/subs/bundles/vmess.txt",
     "https://github.com/morpheusadam/v2ray-config/raw/refs/heads/main/subs/bundles/vless.txt",
     "https://github.com/morpheusadam/v2ray-config/raw/refs/heads/main/subs/bundles/trojan.txt",
