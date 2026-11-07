@@ -3,7 +3,7 @@ const fs = require('fs/promises');
 // الليستة ديال الروابط ديالك
 const sourceUrls = [
     
-
+    "https://github.com/Z-ikko/ZikkO-Vpn-configs/raw/refs/heads/main/sub/all.txt",
     "https://github.com/morpheusadam/v2ray-config/raw/refs/heads/main/subs/bundles/vmess.txt",
     "https://github.com/morpheusadam/v2ray-config/raw/refs/heads/main/subs/bundles/vless.txt",
     "https://github.com/morpheusadam/v2ray-config/raw/refs/heads/main/subs/bundles/trojan.txt",
